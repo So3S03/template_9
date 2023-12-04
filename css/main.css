@@ -1,0 +1,555 @@
+:root {
+    --main-color: #1c1c1c;
+    --secondary-color: #fff;
+    --third-color: #748182;
+    --indicator-active-color: #869791;
+    --indicator-color: #d6d6d6
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.w-85 {
+    width: 85% !important;
+}
+
+.w-80 {
+    width: 80% !important;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.w-95 {
+    width: 95%;
+}
+
+.typing::after {
+    content: "|";
+    font-weight: 400;
+    animation-name: typing;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes typing {
+    1.5% {
+        content: "l|";
+    }
+
+    3% {
+        content: "la|";
+    }
+
+    4.5% {
+        content: "lar|";
+    }
+
+    6% {
+        content: "larr|";
+    }
+
+    7.5% {
+        content: "larry|";
+    }
+
+    9% {
+        content: "larry |";
+    }
+
+    10.5% {
+        content: "larry d|";
+    }
+
+    12% {
+        content: "larry da|";
+    }
+
+    13.5% {
+        content: "larry dan|";
+    }
+
+    15% {
+        content: "larry dani|";
+    }
+
+    16.5% {
+        content: "larry danie|";
+    }
+
+    18% {
+        content: "larry daniel|";
+    }
+
+    19.5% {
+        content: "larry daniels|";
+    }
+
+    21% {
+        content: "larry daniels|";
+    }
+
+    22.5% {
+        content: "larry daniel|";
+    }
+
+    24% {
+        content: "larry danie|";
+    }
+
+    25.5% {
+        content: "larry dani|";
+    }
+
+    27% {
+        content: "larry dan|";
+    }
+
+    28.5% {
+        content: "larry da|";
+    }
+
+    30% {
+        content: "larry d|";
+    }
+
+    31.5% {
+        content: "larry |";
+    }
+
+    33.5% {
+        content: "larry|";
+    }
+
+    34.5% {
+        content: "larr|";
+    }
+
+    36% {
+        content: "lar|";
+    }
+
+    37.5% {
+        content: "la|";
+    }
+
+    39% {
+        content: "l|";
+    }
+
+    40.5% {
+        content: "|";
+    }
+
+    42% {
+        content: "d|";
+    }
+
+    43.5% {
+        content: "de|";
+    }
+
+    45% {
+        content: "dev|";
+    }
+
+    46.5% {
+        content: "deve|";
+    }
+
+    48% {
+        content: "devel|";
+    }
+
+    49.5% {
+        content: "develo|";
+    }
+
+    51% {
+        content: "develop|";
+    }
+
+    52.5% {
+        content: "develope|";
+    }
+
+    54% {
+        content: "developer|";
+    }
+
+    55.5% {
+        content: "developer|";
+    }
+
+    57% {
+        content: "develope|";
+    }
+
+    58.5% {
+        content: "develop|";
+    }
+
+    60% {
+        content: "develo|";
+    }
+
+    61.5% {
+        content: "devel|";
+    }
+
+    63% {
+        content: "deve|";
+    }
+
+    64.5% {
+        content: "dev|";
+    }
+
+    66% {
+        content: "de|";
+    }
+
+    67.5% {
+        content: "d|";
+    }
+
+    69% {
+        content: "|";
+    }
+
+    70.5% {
+        content: "d|";
+    }
+
+    72% {
+        content: "de|";
+    }
+
+    73% {
+        content: "des|";
+    }
+
+    75% {
+        content: "desi|";
+    }
+
+    76.5% {
+        content: "desig|";
+    }
+
+    78% {
+        content: "design|";
+    }
+
+    79.5% {
+        content: "designe|";
+    }
+
+    81% {
+        content: "designer|";
+    }
+
+    82.5% {
+        content: "designer|";
+    }
+
+    84% {
+        content: "designe|";
+    }
+
+    85.5% {
+        content: "design|";
+    }
+
+    87% {
+        content: "desig|";
+    }
+
+    88.5% {
+        content: "desi|";
+    }
+
+    90% {
+        content: "des|";
+    }
+
+    91.5% {
+        content: "de|";
+    }
+
+    93% {
+        content: "d|";
+    }
+
+    94.5% {
+        content: "|";
+    }
+
+    100% {
+        content: "|";
+    }
+
+
+}
+
+.navbar-nav.ms-auto.mb-2 li {
+    margin-right: 40px !important;
+}
+
+.nav-shape {
+    font-size: 14px !important;
+    font-weight: 500;
+}
+
+.nav-shape::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--main-color);
+    transition: all 0.6s;
+}
+
+.nav-shape.active::before {
+    width: 100%;
+}
+
+.intro {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../media/bg.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.intro h2,
+.intro p {
+    font-size: 50px;
+}
+
+.intro div span {
+    width: 35px;
+    height: 35px;
+    background-color: #00000085;
+}
+
+.intro div span:hover {
+    cursor: pointer;
+}
+
+.progress {
+    height: 1.5rem;
+}
+
+.inset-shadow {
+    box-shadow: inset rgba(0, 0, 0, 0.1) 0px 3px 5px;
+}
+
+.col-lg-7 h2.mb-1,
+.head {
+    font-weight: 800 !important;
+}
+
+.download:hover {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+}
+
+.fs-6 {
+    font-size: 15px !important;
+}
+
+.shape {
+    background-image: url(../media/dots.png);
+    background-repeat: repeat;
+    bottom: -25px;
+    left: -30px;
+    width: 85%;
+    height: 80%;
+    z-index: -1;
+}
+
+.head {
+    z-index: 4;
+}
+
+.head::before {
+    position: absolute;
+    content: "";
+    background: url(../media/dots.png);
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%;
+    bottom: -15px;
+    left: 0;
+    z-index: -1;
+}
+
+.serve-ico {
+    width: 70px;
+    height: 70px;
+    background-color: #f4f4f4;
+}
+
+.trans .serve-ico {
+    transition: all 0.5s;
+}
+
+.trans:hover .serve-ico {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+
+.fs-7 {
+    font-size: 13px;
+}
+
+footer {
+    background-color: var(--main-color) !important;
+    color: var(--third-color);
+}
+
+textarea {
+    height: 150px;
+}
+
+.box:hover .layer {
+    transform: rotateY(360deg) scale(1);
+    opacity: 1;
+}
+
+.box2 img {
+    transition: all 0.4s;
+}
+
+.box2:hover img {
+    transform: scale(1.2);
+}
+
+.layer {
+    position: absolute;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    top: 5px;
+    left: 5px;
+    background-color: rgba(255, 255, 255, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    transform: rotateY(180deg) scale(0.5);
+    opacity: 0;
+}
+
+.layer span,
+.layer2 span {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+
+.layer span:not(:last-child) {
+    margin-right: 10px;
+
+}
+
+.layer span:hover,
+.layer2 span:hover {
+    color: var(--main-color);
+    background-color: var(--secondary-color);
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+}
+
+.fw-bolder {
+    font-weight: 900 !important;
+}
+
+.carousel-indicators {
+    bottom: -10px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    background-color: var(--indicator-active-color);
+    border-radius: 50%;
+}
+
+
+
+.layer2 {
+    position: absolute;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    top: 20px;
+    left: 5px;
+    background-color: rgba(255, 255, 255, 0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s;
+    opacity: 0;
+}
+
+.animate:hover .layer2 {
+    top: 5px;
+    opacity: 1;
+}
+
+.layer2 .special {
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    transform: translateY(20px);
+    transition: all 0.4s;
+}
+
+.layer2 p {
+    transform: translateY(-20px);
+    transition: all 0.4s;
+}
+
+.animate:hover .layer2 .special,
+.animate:hover .layer2 p {
+    transform: translateY(0px);
+}
+
+.modal {
+    --bs-modal-bg: transparent;
+}
+
+.modal-content {
+    border: 0;
+}
+
+.modal-header {
+    justify-content: flex-end;
+    padding-right: 0;
+}
+
+.carousel-control-next {
+    right: -490px;
+}
+
+.carousel-control-prev {
+    left: -490px;
+}
+
+.navbar-toggler {
+    border: 0;
+}
