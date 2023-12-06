@@ -18,6 +18,10 @@
     .carousel-control-prev {
         left: -150px;
     }
+
+    .nav-item:not(:last-child) {
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -36,6 +40,9 @@
         left: 0px;
     }
 
+    .nav-item:not(:last-child) {
+        margin-bottom: 20px;
+    }
 }
 
 /* Landscape phones and down */
@@ -57,4 +64,7 @@
         left: 0px;
     }
 
+    .nav-item:not(:last-child) {
+        margin-bottom: 20px;
+    }
 }
